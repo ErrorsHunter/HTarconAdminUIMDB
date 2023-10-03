@@ -1,0 +1,31 @@
+<header class="header" id="header">
+  <div class="header_toggle"> <i class="bx bx-menu" id="header-toggle"></i> </div>
+  <div class="header_img">
+    <!-- <img src="https://i.imgur.com/hczKIze.jpg" alt=""> -->
+   </div>
+</header>
+
+<div class="sidebar">
+<div class="l-navbar" id="nav-bar">
+  <nav class="nav nav-light">
+    <div>
+      <a href="javascript:void(0)" class="nav_logo">
+        <i class="bx bx-layer nav_logo-icon" ></i>
+        <span class="nav_logo-name">H Tarcon</span>
+      </a>
+
+      <div class="nav_list">
+        <a href="javascript:void(0)" class="nav_link" *ngFor="let route of routes" routerLink="{{route.routeUrl}}" routerLinkActive="active" style="cursor: pointer;">
+          <i class="nav_icon {{route.routeIcons}}"></i>
+          <span class="nav_name">{{route.routeName}}</span>
+        </a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="nav_link"> <i class="bx bx-log-out nav_icon"></i> <span class="nav_name">SignOut</span></a>
+  </nav>
+</div>
+</div>
+
+<section class="height-100 py-4">
+  <router-outlet></router-outlet>
+</section>

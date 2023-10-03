@@ -1,0 +1,11 @@
+.card-hover:hover{
+    transform: scale(1.1);
+}
+.card-hover{
+    transition: linear .2s transform;
+}
+
+.card-button-c:hover{
+    background-color: white !important;
+    color: #dc4c64 !important;
+}
